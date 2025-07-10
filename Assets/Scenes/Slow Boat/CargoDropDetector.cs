@@ -6,9 +6,8 @@ public class CargoDropDetector : MonoBehaviour
     {
         if (other.CompareTag("Water"))
         {
-            Debug.Log("💧 货物落入水中！");
+            Debug.Log("💧 Cargo fell into the water!");
             Destroy(gameObject);
         }
     }
-
 }

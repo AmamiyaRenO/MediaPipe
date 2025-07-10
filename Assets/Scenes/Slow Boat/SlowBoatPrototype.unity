@@ -214,6 +214,210 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6717044640063268569, guid: 8b9c2549002de7a4fbba40dfaf37b661, type: 3}
+--- !u!1 &124967861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124967863}
+  - component: {fileID: 124967862}
+  m_Layer: 0
+  m_Name: VoiceProcessor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &124967862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124967861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf39116cc6db44d47b2eaf534e0f6682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MicrophoneIndex: 0
+  _minimumSpeakingSampleValue: 0.05
+  _silenceTimer: 1
+  _autoDetect: 0
+--- !u!4 &124967863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124967861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2319317, y: 0.38071084, z: 2.435976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &354803515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354803517}
+  - component: {fileID: 354803516}
+  m_Layer: 0
+  m_Name: VoiceController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &354803516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354803515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fe64cc43e62ad42a0e4ae6dadcb716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceRecognizer: {fileID: 0}
+  targetBoatController: {fileID: 0}
+  enableVoiceControl: 1
+  showDebugLogs: 1
+  showCameraCommands:
+  - show camera
+  - open camera
+  - camera on
+  hideCameraCommands:
+  - hide camera
+  - close camera
+  - camera off
+  addCargoCommands:
+  - add cargo
+  - load cargo
+  - add box
+  - add item
+  morningSkyCommands:
+  - morning
+  - sunrise
+  - early
+  noonSkyCommands:
+  - noon
+  - midday
+  - daytime
+  eveningSkyCommands:
+  - evening
+  - sunset
+  - dusk
+  - night
+  startGameCommands:
+  - start
+  - begin
+  - "\u5F00\u59CB"
+  - go
+  - play
+  windLeftCommands:
+  - wind left
+  - left wind
+  - turn wind left
+  windRightCommands:
+  - wind right
+  - right wind
+  - turn wind right
+  windRandomCommands:
+  - random wind
+  - change wind
+  - shuffle wind
+  cameraViewObject: {fileID: 1656524562}
+  skyboxMorning: {fileID: 2100000, guid: 6ed2c66c65b9ecf4580b38fbce982a7b, type: 2}
+  skyboxNoon: {fileID: 2100000, guid: ddceabbffe5e97449950936d3f1bce21, type: 2}
+  skyboxEvening: {fileID: 2100000, guid: e374210e682e8b843aeb08ecaea1ab8c, type: 2}
+--- !u!4 &354803517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354803515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2319317, y: 0.38071084, z: 2.435976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &355000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355000003}
+  - component: {fileID: 355000002}
+  m_Layer: 0
+  m_Name: GameStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678901234ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStarted: 0
+  gameTitle: Slow Boat Motion Control Game
+  gameSubtitle: Say 'start' or 'begin' to play
+  hintText: Voice Control | Motion Control
+  boatController: {fileID: 0}
+  voiceController: {fileID: 354803516}
+  poseRunner: {fileID: 0}
+  startCommands:
+  - start
+  - begin
+  - "\u5F00\u59CB"
+  - go
+  - play
+  titleFontSize: 48
+  subtitleFontSize: 24
+  hintFontSize: 18
+--- !u!4 &355000003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355000001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408697766
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +896,109 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &851356254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851356256}
+  - component: {fileID: 851356255}
+  m_Layer: 0
+  m_Name: PoseEmotionAnalyzer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &851356255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851356254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2ba6c95dac85844917bc90436809d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enablePoseAnalysis: 1
+  dataValidityPeriod: 2
+  movementHistorySize: 30
+  bodyTiltThreshold: 15
+  armOpenThreshold: 0.4
+  movementSpeedThreshold: 1
+  poseRunner: {fileID: 1446798213}
+  showAnalysisLogs: 0
+  showPoseUI: 0
+--- !u!4 &851356256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851356254}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &935415163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935415165}
+  - component: {fileID: 935415164}
+  m_Layer: 0
+  m_Name: VoskSpeechToText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &935415164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935415163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f217616079a9a74489a1ae3cd9178787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModelPath: vosk-model-small-en-us-0.15.zip
+  VoiceProcessor: {fileID: 124967862}
+  MaxAlternatives: 3
+  MaxRecordLength: 5
+  AutoStart: 1
+  KeyPhrases: []
+--- !u!4 &935415165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935415163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2319317, y: 0.38071084, z: 2.435976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976354521
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +1104,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 1, z: 10}
   m_Center: {x: 0, y: -0.5, z: 0}
+--- !u!1 &1193309453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193309455}
+  - component: {fileID: 1193309454}
+  m_Layer: 0
+  m_Name: EmotionDetectionSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1193309454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193309453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d11d178292b1647913018590f4b420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableEmotionDetection: 1
+  analysisInterval: 1
+  emotionSmoothingFactor: 0.3
+  voiceAnalyzer: {fileID: 1401312346}
+  poseAnalyzer: {fileID: 851356255}
+  loggingSystem: {fileID: 1386154470}
+  showEmotionLogs: 0
+  showEmotionUI: 0
+--- !u!4 &1193309455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193309453}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1262225978
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +1250,208 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1270608189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270608190}
+  - component: {fileID: 1270608191}
+  m_Layer: 0
+  m_Name: UserBehaviorAnalyzer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270608190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270608189}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270608191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270608189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c376a924597ecae4c915f3afa74c5a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableBehaviorAnalysis: 1
+  analysisInterval: 60
+  learningCurveWindow: 10
+  activeUserThreshold: 3
+  emotionStabilityThreshold: 0.7
+  learningProgressThreshold: 0.2
+  emotionSystem: {fileID: 1193309454}
+  loggingSystem: {fileID: 1386154470}
+  showAnalysisLogs: 0
+  showBehaviorUI: 0
+--- !u!1 &1343629809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343629810}
+  m_Layer: 0
+  m_Name: EmotionAnalysisSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343629810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343629809}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2319317, y: 0.38071084, z: 2.435976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1193309455}
+  - {fileID: 1401312347}
+  - {fileID: 851356256}
+  - {fileID: 1386154471}
+  - {fileID: 1843043374}
+  - {fileID: 1270608190}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1386154469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386154471}
+  - component: {fileID: 1386154470}
+  m_Layer: 0
+  m_Name: AdvancedLoggingSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1386154470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386154469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7ec1bc711d34a4fa12cf2a35f6d824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableLogging: 1
+  logFilePath: UserBehaviorLogs
+  realTimeWrite: 0
+  bufferSize: 100
+  logEmotionEvents: 1
+  logVoiceEvents: 1
+  logPoseEvents: 1
+  logGameEvents: 1
+  logPerformanceData: 1
+  analysisInterval: 30
+  dataRetentionDays: 30
+  showDebugLogs: 0
+  showStatsUI: 0
+--- !u!4 &1386154471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386154469}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1401312345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401312347}
+  - component: {fileID: 1401312346}
+  m_Layer: 0
+  m_Name: VoiceEmotionAnalyzer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1401312346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401312345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa6577a728c0414780ebd48fd75fca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableVoiceAnalysis: 1
+  bufferSize: 1024
+  dataValidityPeriod: 3
+  volumeThreshold: 0.1
+  highFreqThreshold: 0.3
+  speechRateWindow: 5
+  voiceProcessor: {fileID: 124967862}
+  voskSpeech: {fileID: 935415164}
+  showAnalysisLogs: 0
+  showVoiceUI: 1
+--- !u!4 &1401312347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401312345}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446798212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,6 +1711,71 @@ MonoBehaviour:
   cargoCount: 3
   startOffset: {x: 0, y: 0.5, z: 0}
   spacing: {x: 0.5, y: 0, z: 0}
+  spawnPoint: {fileID: 1634017418}
+--- !u!1 &1656524562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8571076842583978906, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+  m_PrefabInstance: {fileID: 719842427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1843043373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843043374}
+  - component: {fileID: 1843043375}
+  m_Layer: 0
+  m_Name: DataVisualizationDashboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843043374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843043373}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343629810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843043375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843043373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24edc6b9171f8a24abcf899fbd7e7e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDashboard: 1
+  dashboardPosition: {x: 10, y: 10}
+  dashboardSize: {x: 400, y: 600}
+  updateInterval: 1
+  showEmotionChart: 1
+  showVoiceStats: 1
+  showPoseAnalysis: 1
+  showPerformanceMonitor: 1
+  showSessionStats: 1
+  emotionSystem: {fileID: 1193309454}
+  voiceAnalyzer: {fileID: 1401312346}
+  poseAnalyzer: {fileID: 851356255}
+  loggingSystem: {fileID: 1386154470}
+  emotionHistoryLength: 20
+  performanceHistoryLength: 30
 --- !u!1 &1946866508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,7 +1808,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poseRunner: {fileID: 1446798213}
   boatModel: {fileID: 766410964}
-  tiltMultiplier: 20
+  voiceController: {fileID: 0}
+  gameStateManager: {fileID: 0}
+  tiltMultiplier: 30
   maxTiltAngle: 30
   waveStrength: 20
   waveFrequency: 0.9
@@ -1351,6 +1979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poseRunner: {fileID: 1446798213}
   boatModel: {fileID: 0}
+  voiceController: {fileID: 0}
+  gameStateManager: {fileID: 0}
   tiltMultiplier: 10
   maxTiltAngle: 10
   waveStrength: 10
@@ -1519,3 +2149,8 @@ SceneRoots:
   - {fileID: 1839307126208510567}
   - {fileID: 976354525}
   - {fileID: 1634017418}
+  - {fileID: 354803517}
+  - {fileID: 935415165}
+  - {fileID: 124967863}
+  - {fileID: 355000003}
+  - {fileID: 1343629810}
