@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Slow Boat/SlowBoatPrototype.unity
+    guid: ea642d6a5cdef014fbe00af8c0d36fbc
   m_configObjects: {}

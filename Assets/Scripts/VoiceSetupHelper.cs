@@ -26,7 +26,6 @@ public class VoiceSetupHelper : MonoBehaviour
     [Header("=== Component References ===")]
     public VoiceProcessor voiceProcessor;
     public VoskSpeechToText voskSpeech;
-    public VoiceEmotionAnalyzer voiceAnalyzer;
     
     private bool isSetupComplete = false;
     
@@ -38,9 +37,6 @@ public class VoiceSetupHelper : MonoBehaviour
             
         if (voskSpeech == null)
             voskSpeech = FindObjectOfType<VoskSpeechToText>();
-            
-        if (voiceAnalyzer == null)
-            voiceAnalyzer = FindObjectOfType<VoiceEmotionAnalyzer>();
     }
     
     void Start()
@@ -76,12 +72,6 @@ public class VoiceSetupHelper : MonoBehaviour
         if (voskSpeech != null)
         {
             SetupVoskSpeech();
-        }
-        
-        // 设置VoiceEmotionAnalyzer
-        if (voiceAnalyzer != null)
-        {
-            SetupVoiceAnalyzer();
         }
         
         // 启动录音
@@ -141,22 +131,7 @@ public class VoiceSetupHelper : MonoBehaviour
             Debug.Log("🎤 Vosk speech recognizer found");
     }
     
-    /// <summary>
-    /// 设置语音情感分析器
-    /// </summary>
-    private void SetupVoiceAnalyzer()
-    {
-        if (voiceAnalyzer.volumeThreshold > minimumVolumeThreshold)
-        {
-            voiceAnalyzer.volumeThreshold = minimumVolumeThreshold + 0.005f; // 稍微高一点
-            if (showDebugLogs)
-                Debug.Log($"🎤 Adjusted voice analyzer threshold to: {voiceAnalyzer.volumeThreshold}");
-        }
-        
-        // 启用调试日志
-        voiceAnalyzer.showAnalysisLogs = true;
-        voiceAnalyzer.showVoiceUI = true;
-    }
+
     
     /// <summary>
     /// 启动语音录音
